@@ -22,5 +22,11 @@ pipeline {
              echo "Deploying the application..."
            }
         }
+    
+      stage("SmokeTest") {
+           steps  {
+             echo "Sanity tests..."
+           }
+        }
      }
 }
